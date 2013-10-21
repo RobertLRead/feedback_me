@@ -368,7 +368,7 @@ var fm = (function () {
 							+ '<div class="feedback_title ' + jQueryUIClasses1 + jQueryUIClasses3 + '">'
 							+	'<span class="' + jQueryUIClasses4 + '">' + fm_options.title_label + '</span>'
 							+ '</div>'
-							+	'<form id="feedback_me_form">'
+							+	'<span id="feedback_me_form">'
 							+	'<ul>'
 							+		'<li>	<label for="feedback_name">' + fm_options.name_label + '</label> ' + name_asterisk + ' <input type="text" id="feedback_name" ' + name_required + ' placeholder="' + fm_options.name_placeholder + '"></input> </li>'
 
@@ -380,7 +380,7 @@ var fm = (function () {
 
 							+		'<li>	<button id="feedback_submit" onclick="fm.sendFeedback(event);" class="' + bootstrap_btn + '">' + fm_options.submit_label + '</button> </li>'
 							+	'</ul>'
-							+	'</form>'
+							+	'</span>'
 						+ '</div>');
 
 		if (fm_options.jQueryUI === true) {
